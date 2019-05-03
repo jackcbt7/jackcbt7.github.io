@@ -7,6 +7,18 @@ title: Optimizing queue data structure in C
 
 The way a queue works is the data enters first will be the first to leave.
 
+## Results
+
+Add to front:
+total_element_size: 40000, total_pointer_size: 80000 total_size: 120000 total_time: 0.000612
+
+Add to end (naive):
+total_element_size: 40000, total_pointer_size: 80000 total_size: 120000 total_time: 0.160356
+
+Add to end (using a end tracker):
+total_element_size: 40000, total_pointer_size: 80000 total_size: 120000 total_time: 0.000610
+
+
 
 ### Code
 ```cpp
